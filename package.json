@@ -1,0 +1,33 @@
+{
+  "name": "learn-chinese-backend",
+  "version": "1.0.0",
+  "description": "Backend part of Learn Chinese App",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vova-Pol/learn-chinese-backend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vova-Pol/learn-chinese-backend/issues"
+  },
+  "homepage": "https://github.com/Vova-Pol/learn-chinese-backend#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "express-winston": "^4.2.0",
+    "mongoose": "^7.0.5",
+    "winston": "^3.8.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.39.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "nodemon": "^2.0.22"
+  }
+}
