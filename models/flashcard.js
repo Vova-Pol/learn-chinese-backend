@@ -14,7 +14,8 @@ const flashcardSchema = new Schema({
     required: true,
   },
   episode: {
-    type: Number,
+    type: String,
+    required: true,
   },
 });
 
