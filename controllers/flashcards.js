@@ -30,7 +30,22 @@ async function postFlashcard(req, res, next) {
   }
 }
 
+function deleteFlashcard(req, res, next) {
+  const { flashcardId } = req.params;
+
+  Flashcard.findByIdAndDelete(flashcardId)
+    .then((data) => {
+      if (data) {
+        res.send({ data });
+      } else {
+        next(new Error('Не нашлось ни одной карточки'));
+      }
+    })
+    .catch(next);
+}
+
 module.exports = {
   postFlashcard,
   getFlashcards,
+  deleteFlashcard,
 };
