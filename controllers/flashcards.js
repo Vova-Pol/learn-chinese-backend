@@ -1,4 +1,17 @@
 const Flashcard = require('../models/flashcard');
+const { Error } = require('mongoose');
+
+function getFlashcards(req, res, next) {
+  Flashcard.find()
+    .then((data) => {
+      if (data) {
+        res.send({ data });
+      } else {
+        next(new Error('Не нашлось ни одной карточки'));
+      }
+    })
+    .catch(next);
+}
 
 async function postFlashcard(req, res, next) {
   try {
@@ -19,4 +32,5 @@ async function postFlashcard(req, res, next) {
 
 module.exports = {
   postFlashcard,
+  getFlashcards,
 };

@@ -1,6 +1,7 @@
 const flashcardsRouter = require('express').Router();
-const { postFlashcard } = require('../controllers/flashcards');
+const { postFlashcard, getFlashcards } = require('../controllers/flashcards');
 
 flashcardsRouter.post('/', postFlashcard);
+flashcardsRouter.get('/', getFlashcards);
 
 module.exports = flashcardsRouter;
