@@ -6,7 +6,7 @@ const corsConfig = {
   credentials: true,
 };
 
-const { PORT = 3001 } = process.env;
+const { PORT = 3002 } = process.env;
 const { DB_URL = 'mongodb://localhost:27017/learn-chinese-db' } = process.env;
 
 module.exports = {
