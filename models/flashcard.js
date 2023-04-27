@@ -13,6 +13,10 @@ const flashcardSchema = new Schema({
     type: String,
     required: true,
   },
+  origin: {
+    type: String,
+    required: true,
+  },
   episode: {
     type: String,
     required: true,

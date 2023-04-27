@@ -21,6 +21,7 @@ async function postFlashcard(req, res, next) {
       character,
       pinyin,
       translation,
+      origin,
       episode,
     });
 
