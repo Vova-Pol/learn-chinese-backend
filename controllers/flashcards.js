@@ -15,7 +15,7 @@ function getFlashcards(req, res, next) {
 
 async function postFlashcard(req, res, next) {
   try {
-    const { character, pinyin, translation, episode } = req.body;
+    const { character, pinyin, translation, origin, episode } = req.body;
 
     const createdFlashcard = await Flashcard.create({
       character,
